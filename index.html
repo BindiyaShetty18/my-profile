@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" type="image/x-icon">
+    <style>
+      #resume{
+        color: orange;
+        font-weight: bolder;
+      }
+      .heading{
+        color: cadetblue;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <!-- header section -->
@@ -52,7 +62,7 @@
           />
         </svg>
         &nbsp; shettybindiya18@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="assets/CMresume (2) (1).pdf" download>
+        <a href="assets/CMresume (2) (1).pdf" download id="resume">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -86,9 +96,9 @@
     <section>
       <!-- Home Section -->
       <section id="home">
-        <h2>Professional Summary</h2>
+        <h2 class="heading">Professional Summary</h2>
         <ul>
-          <li>
+          <li style="color: cadetblue;">
             Having 1 year of Experience in developing single page Web
             Applications using Angular 8, HTML5, CSS3, BootStrap 5, JavaScript,
             TypeScript
@@ -117,7 +127,7 @@
     <hr />
     <!-- Technology stack section -->
     <section id="techStack">
-      <h2>My Technology stack is</h2>
+      <h2 class="heading">My Technology stack is</h2>
 
       <table border="1">
         <thead>
@@ -159,7 +169,7 @@
 
     <!-- Project Section -->
     <section id="project">
-      <h2>Project Details</h2>
+      <h2 class="heading">Project Details</h2>
       
       <p><strong>Name : Student Management</strong><br>
         <br>
