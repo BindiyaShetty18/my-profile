@@ -6,6 +6,10 @@
     <title>My Profile</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       #resume{
         color: orange;
@@ -19,7 +23,8 @@
       .heading{
         color: purple;
         font-style: italic;
-        
+        font-family: "Roboto", sans-serif;
+
       }
       .header-info{
         margin-left: 10px;
@@ -51,11 +56,42 @@
         padding-bottom: 50px;
 
       }
+      table,tr,th,td{
+        border: solid 2px; color: orangered;
+        border-collapse: collapse;
+      }
+      .responsibilities{
+        list-style-type: lower-roman;
+      }
+      .responsibilities li{
+        padding-top: 10px;
+      }
+      #projectdesc ::selection{
+    
+      background-color: rgb(241, 193, 104);
+    
+      }
+      #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+      #techTable{
+        width: 50%;
+      }
+      .headNav{
+        font-family: "Roboto", sans-serif;
+      }
+      .professional, #techTable, .responsibilities {
+        font-family: "Poppins", sans-serif;
+
+      }
     </style>
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <header class="headNav">
       
         <i class="fa fa-user fa-lg" aria-hidden="true"></i>
         <span class="header-info">Bindiya Shetty</span>
@@ -69,7 +105,7 @@
     </header>
 
     <!-- Navigation section -->
-    <nav style="padding: 20px;">
+    <nav class="headNav" style="padding: 20px;">
       <a href="#home"> <span class="navigation">HOME</span></a>
       <a href="#techStack"> <span class="navigation">TECH STACK</span></a>
       <a href="#project"> <span class="navigation">PROJECTS</span></a>
@@ -115,7 +151,7 @@
     <section id="techStack">
       <h2 class="heading">My Technology stack is</h2>
 
-      <table border="1">
+      <table id="techTable">
         <thead class="table">
           <tr>
             <th class="table">SR.No</th>
@@ -154,22 +190,22 @@
     <hr />
 
     <!-- Project Section -->
-    <section>
+    
       <h2 class="heading">Project Details</h2>
-      
+      <section class="professional">
       <span class="details"><strong>Name : Student Management</strong></span>
         
       <strong style="margin-left: 160px;">Environment :</strong> Angular 8, TypeScript, JavaScript(ES6), HTML5, CSS, Bootstrap, GitHub, Desktop GitHub, Agile and JIRA, IDE - VS Code <br>
         
       <strong>Team Size :</strong>06  <strong style="margin-left: 265px;">Duration :</strong> <em>2021-1st July Till present</em> <br>
         
-      <span class="details"><strong>Project Description :</strong> This project is mainly used for student management in colleges, where it help to manage student record like <br>
+      <strong>Project Description :</strong> <span id="projectdesc">This project is mainly used for student management in colleges, where it help to manage student record like <br>
         student registration, student update information and to see all his or her academic activities like score card, attendance.</span>
       
     </section>
     <hr />
     <h2 class="heading">Roles and Responsibilities :</h2>
-    <ul>
+    <ol class="responsibilities">
       <li class="roles">Designed and implemented the useer interface using HTML 5 and CSS</li>
       <li class="roles">Work closely with Backend developers for code integration</li>
       <li class="roles">Identifying and troubleshooting issues with front end code</li>
@@ -177,13 +213,13 @@
       <li class="roles">Used JIRA for bug tracking</li>
       <li class="roles">Implemented project using Agile SCRUM methodology, Involved in daily stand up meetings , sprint showcase and sprint retrospective</li>
       <li class="roles">Involved in fixing technical issues</li>
-    </ul>
+    </ol>
     <hr>
 
     <!-- Education Section -->
     <section id="education">
       <h2 class="heading">Education Details</h2>
-      <table border="1">
+      <table class="professional">
         <thead class="table">
           <tr>
             <th class="table">Qualification</th>
@@ -237,7 +273,7 @@
     </footer>
     <br/>
 
-    <section>
+    <section class="professional" >
       <!-- Copy write section -->
       Copyright &copy;2024 Bindiya Shetty Video Communications, Inc. All rights
       reserved.
