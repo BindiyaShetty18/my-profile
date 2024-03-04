@@ -7,87 +7,11 @@
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-      #resume{
-        color: orange;
-        font-weight: bolder;
-        padding: 20px;
-      }
-      header{
-        padding: 20px;
-        background-color: cadetblue;
-      }
-      .heading{
-        color: purple;
-        font-style: italic;
-        font-family: "Roboto", sans-serif;
-
-      }
-      .header-info{
-        margin-left: 10px;
-        margin-right: 20px;
-        font-weight: bolder;
-      }
-      .navigation{
-        margin: 30px;
-      }
-      .social{
-        margin-left: 10px;
-        margin-right: 30px;
-      }
-      .roles{
-        margin: 20px;
-      }
-      .professional{
-        margin: 20px;
-      }
-      .table{
-        padding: 10px;
-        text-align: center;
-      }
-      .details{
-        
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-      }
-      table,tr,th,td{
-        border: solid 2px; color: orangered;
-        border-collapse: collapse;
-      }
-      .responsibilities{
-        list-style-type: lower-roman;
-      }
-      .responsibilities li{
-        padding-top: 10px;
-      }
-      #projectdesc ::selection{
-    
-      background-color: rgb(241, 193, 104);
-    
-      }
-      #listSummary li{
-        list-style-type: none;
-      }
-      #listSummary li::marker{
-        content: "✍️";
-      }
-      #techTable{
-        width: 50%;
-      }
-      .headNav{
-        font-family: "Roboto", sans-serif;
-      }
-      .professional, #techTable, .responsibilities {
-        font-family: "Poppins", sans-serif;
-
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+   
   </head>
   <body>
     <!-- header section -->
@@ -105,17 +29,19 @@
     </header>
 
     <!-- Navigation section -->
-    <nav class="headNav" style="padding: 20px;">
-      <a href="#home"> <span class="navigation">HOME</span></a>
-      <a href="#techStack"> <span class="navigation">TECH STACK</span></a>
-      <a href="#project"> <span class="navigation">PROJECTS</span></a>
-      <a href="#education"> <span class="navigation">EDUCATION</span></a>
-      <a href="perosnalDetails.html" target="_blank"> <span class="navigation">PERSONAL DETAILS</span></a>
-      <a href="others.html" target="_blank"> <span class="navigation">OTHERS</span></a>
+    <nav id="headNav">
+      <ul>
+        <li><a href="#home"> <span class="navigation">HOME</span></a></li>
+        <li><a href="#techStack"> <span class="navigation">TECH STACK</span></a></li>
+        <li><a href="#project"> <span class="navigation">PROJECTS</span></a></li>
+        <li><a href="#education"> <span class="navigation">EDUCATION</span></a></li>
+        <li><a href="perosnalDetails.html" target="_blank"> <span class="navigation">PERSONAL DETAILS</span></a></li>
+        <li><a href="others.html" target="_blank"> <span class="navigation">OTHERS</span></a></li>
+      </ul>
     </nav>
 
     <!-- Main Section -->
-    <section>
+    <section id="container">
       <!-- Home Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
@@ -145,7 +71,7 @@
           <li class="professional">Ability to work with people at all levels in the program</li>
         </ul>
       </section>
-    </section>
+    
     <hr />
     <!-- Technology stack section -->
     <section id="techStack">
@@ -278,5 +204,6 @@
       Copyright &copy;2024 Bindiya Shetty Video Communications, Inc. All rights
       reserved.
     </section>
+  </section>
   </body>
 </html>
