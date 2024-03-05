@@ -28,6 +28,7 @@
       }
       .navigation{
         margin: 30px;
+
       }
       .social{
         margin-left: 10px;
@@ -75,16 +76,22 @@
       #techTable{
         width: 50%;
       }
-      #headNav{
+      .headNav{
         font-family: "Roboto", sans-serif;
         padding: 10px;
         text-align: right;
+        top: 20px;
+        /* right: 20px; */
+        position: fixed; 
       }
-      #headNav li{
-        display:inline ;
-        margin-right: 10px;
+      #Nav li{
+        display:inline-block ; 
+        /* top: 20px;
+        left: 20px;
+        background-color: yellow;
+        position: fixed;  */
       }
-      #headNav a{
+      #Nav a{
         text-decoration: none;
         letter-spacing: 2px;
         font-weight: bold;
@@ -92,9 +99,27 @@
       #container {
          width: 800px;
          margin: 20px auto;
+         
       }
       .professional, #techTable, .responsibilities {
         font-family: "Poppins", sans-serif;
 
       }
-    
+      #Nav {
+        background-color: yellow;
+        top: 70px;
+        left: 10px;
+        position: fixed;
+      }
+      #icon-wp {
+        bottom: 20px;
+        right: 20px;
+        position: fixed;
+      }
+      #icon {
+        
+        bottom: 20px;
+        right: 80px;
+        position: fixed;
+      }
+       
