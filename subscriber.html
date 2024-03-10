@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber</title>
+    <style>
+        #main {
+            border: 2px solid gray;
+            height: 650px;
+            width: 500px;
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+        #area {
+            position: relative;
+            left: 15px;
+            background-color: cadetblue;
+            color: white;
+            font-size: 15px;
+            font-weight: medium; 
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+        }
+        #heading {
+            position: relative;
+            left: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        #mail {
+            font-size: larger;
+            font-weight: bold;
+            position: relative;
+            left: 30px;
+        }
+        .square {
+            position: relative;
+            left: 40px ;
+            width: 430px;
+            height: 30px;
+            border-radius: 10px;
+            
+        }
+        #star {
+            color: red;
+        }
+        #header {
+            position: relative;
+            left: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        #btn {
+            position: relative;
+            left: 380px;
+            padding: 8px;
+            font-weight: bolder;
+            background-color: darkred;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="main">
+        <h2 id="heading">Subscriber</h2>
+        <hr>
+        <textarea id="area" cols="60" rows="15"></textarea>
+        <br>
+        <h2 id="mail">Email <span id="star">*</span></h2>
+        <input class="square" type="text" placeholder="Enter the Mail Id">
+        <br>
+        <br>
+        
+        <h3 id="header">Unsubscribe Reason</h3>
+        <input class="square" type="text" placeholder="Unsubscribe Reason">
+        <br>
+        <br>
+        <button id="btn" type="submit">Unsubscribe</button>
+    </section>
+</body>
+</html>
